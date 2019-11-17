@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+.App {
+  overflow: hidden;
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #028C6A;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 50px;
+  color: white;
+  height: 80px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.left-content {
+  background-color: #7BC5AE;
+  height: 999px;
+}
+
+.right-content {
+  background-color: #D1EDE1;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gender-img {
+  width: 250px;
+  height: 250px;
+}
+
+.box-gender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.box-gender:hover {
+  background-color:#028C6A;
+}
+
+.data-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-input {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.input {
+  height: 30px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.texts {
+  font-size: 30px;
+}
+
+.circle {
+  margin-left: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: #028C6A;
+  color: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #028C6A;
+  color: white;
+  width: 500px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
