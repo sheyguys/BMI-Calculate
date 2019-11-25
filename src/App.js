@@ -22,7 +22,8 @@ class App extends Component {
       textstatusoutrange: "",
       textstatus: "อ้วน ไม่อ้วน อ้วน ไม่อ้วน อ้วน ไม่อ้วน อ้วน!!!!!!!",
       BMIvalue: 0,
-      colorbackground: ''
+      colorbackgroundM: '',
+      colorbackgroundFM: ''
     };
   }
 
@@ -50,11 +51,19 @@ class App extends Component {
     this.setState({ height: event.target.value })
   };
 
-  Select = event => {
-    if (this.state.colorbackground === '') {
-      this.setState({ colorbackground: '#028C6A' })
+  SelectM = event => {
+    if (this.state.colorbackgroundM === '') {
+      this.setState({ colorbackgroundM: '#028C6A' })
     } else {
-      this.setState({ colorbackground: '' })
+      this.setState({ colorbackgroundM: '' })
+    }
+  }
+
+  SelectFM = event => {
+    if (this.state.colorbackgroundFM === '') {
+      this.setState({ colorbackgroundFM: 'palevioletred' })
+    } else {
+      this.setState({ colorbackgroundFM: '' })
     }
   }
 
@@ -133,10 +142,10 @@ class App extends Component {
             <br />
             <br />
             <div className="gender">
-              <div className="box-genderm" onClick={this.Select}>
+              <div className="box-genderm" onClick={this.SelectM} style={{backgroundColor: this.state.colorbackgroundM}}>
                 <img class="gender-img" src={male}></img>
               </div>
-              <div className="box-genderfm" onClick={this.Select}>
+              <div className="box-genderfm" onClick={this.SelectFM} style={{backgroundColor: this.state.colorbackgroundFM}}>
                 <img class="gender-img" src={female}></img>
               </div>
             </div>
