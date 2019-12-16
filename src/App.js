@@ -22,6 +22,7 @@ class App extends Component {
       height: '',
       BMIvalue: 0,
       emotionpic: zero,
+      textstatus:'',
       textstatusoutrange: '',
       colorbackgroundM: '',
       colorbackgroundFM: '',
@@ -120,64 +121,68 @@ class App extends Component {
     } else if (this.state.weight == 0) {
       this.setState({ textstatusoutrange: 'Please complete Weight!!!' })
     } else if (this.state.colorbackgroundAsia !== '') {
-        if (bmi < 18.5) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ emotionpic: sad })
-          this.setState({ textstatus: 'น้อยกว่า 18.5: น้ำหนักน้อยเกินไป ซึ่งอาจจะเกิดจากนักกีฬาที่ออกกำลังกายมาก และได้รับสารอาหารไม่เพียงพอ วิธีแก้ไขต้องรับประทานอาหารที่มีคุณภาพ และมีปริมาณพลังงานเพียงพอ และออกกำลังกายอย่างเหมาะสม' })
-        }
-        if (bmi >= 18.5 && bmi < 23.4) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ emotionpic: love })
-          this.setState({ textstatus: '18.5 - 23.4: น้ำหนักปกติ และมีปริมาณไขมันอยู่ในเกณฑ์ปกติ มักจะไม่ค่อยมีโรคร้าย อุบัติการณ์ของโรคเบาหวาน ความดันโลหิตสูงต่ำกว่าผู้ที่อ้วนกว่านี้' })
-        }
-        if (bmi >= 23.5 && bmi < 28.4) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ emotionpic: smile })
-          this.setState({ textstatus: '23.5 - 28.4: น้ำหนักเกิน หากคุณมีกรรมพันธ์เป็นโรคเบาหวานหรือไขมันในเลือดสูงต้องพยายามลดน้ำหนักให้ดัชนีมวลกายต่ำกว่า 23' })
-        }
-        if (bmi >= 28.5 && bmi < 34.9) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ emotionpic: smilecry })
-          this.setState({ textstatus: '28.5 - 34.9: โรคอ้วนระดับ1 และหากคุณมีเส้นรอบเอวมากกว่า 90 ซม.(ชาย) 80 ซม.(หญิง) คุณจะมีโอกาศเกิดโรคความดัน เบาหวานสูง จำเป็นต้องควบคุมอาหาร และออกกำลังกาย' })
-        }
-        if (bmi >= 35.0 && bmi < 39.9) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ emotionpic: wow })
-          this.setState({ textstatus: '35.0 - 39.9: โรคอ้วนระดับ2 คุณเสี่ยงต่อการเกิดโรคที่มากับความอ้วน หากคุณมีเส้นรอบเอวมากกว่าเกณฑ์ปกติคุณจะเสี่ยงต่อการเกิดโรคสูง คุณต้องควบคุมอาหาร และออกกำลังกายอย่างจริงจัง' })
-        }
-        if (bmi >= 40) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ emotionpic: angry })
-          this.setState({ textstatus: '40 หรือมากกว่านี้ : โรคอ้วนขั้นสูงสุด' })
-        }
-    } else if (this.state.colorbackgroundEurope !== '') {
-        if (bmi < 18.5) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ textstatus: 'Under weight' })
-        }
-        if (bmi >= 18.5 && bmi < 24.9) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ textstatus: 'Normal weight' })
-        }
-        if (bmi >= 25 && bmi < 29.9) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ textstatus: 'Overweight' })
-        }
-        if (bmi >= 30) {
-          this.setState({ dis: false })
-          this.setState({ displaystatus: "flex" });
-          this.setState({ textstatus: 'Obesity' })
-        }
+      if (bmi < 18.5) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: sad })
+        this.setState({ textstatus: 'น้อยกว่า 18.5: น้ำหนักน้อยเกินไป ซึ่งอาจจะเกิดจากนักกีฬาที่ออกกำลังกายมาก และได้รับสารอาหารไม่เพียงพอ วิธีแก้ไขต้องรับประทานอาหารที่มีคุณภาพ และมีปริมาณพลังงานเพียงพอ และออกกำลังกายอย่างเหมาะสม' })
       }
+      if (bmi >= 18.5 && bmi < 23.4) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: love })
+        this.setState({ textstatus: '18.5 - 23.4: น้ำหนักปกติ และมีปริมาณไขมันอยู่ในเกณฑ์ปกติ มักจะไม่ค่อยมีโรคร้าย อุบัติการณ์ของโรคเบาหวาน ความดันโลหิตสูงต่ำกว่าผู้ที่อ้วนกว่านี้' })
+      }
+      if (bmi >= 23.5 && bmi < 28.4) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: smile })
+        this.setState({ textstatus: '23.5 - 28.4: น้ำหนักเกิน หากคุณมีกรรมพันธ์เป็นโรคเบาหวานหรือไขมันในเลือดสูงต้องพยายามลดน้ำหนักให้ดัชนีมวลกายต่ำกว่า 23' })
+      }
+      if (bmi >= 28.5 && bmi < 34.9) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: smilecry })
+        this.setState({ textstatus: '28.5 - 34.9: โรคอ้วนระดับ1 และหากคุณมีเส้นรอบเอวมากกว่า 90 ซม.(ชาย) 80 ซม.(หญิง) คุณจะมีโอกาศเกิดโรคความดัน เบาหวานสูง จำเป็นต้องควบคุมอาหาร และออกกำลังกาย' })
+      }
+      if (bmi >= 35.0 && bmi < 39.9) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: wow })
+        this.setState({ textstatus: '35.0 - 39.9: โรคอ้วนระดับ2 คุณเสี่ยงต่อการเกิดโรคที่มากับความอ้วน หากคุณมีเส้นรอบเอวมากกว่าเกณฑ์ปกติคุณจะเสี่ยงต่อการเกิดโรคสูง คุณต้องควบคุมอาหาร และออกกำลังกายอย่างจริงจัง' })
+      }
+      if (bmi >= 40) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: angry })
+        this.setState({ textstatus: '40 หรือมากกว่านี้ : โรคอ้วนขั้นสูงสุด' })
+      }
+    } else if (this.state.colorbackgroundEurope !== '') {
+      if (bmi < 18.5) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: sad })
+        this.setState({ textstatus: 'Under weight' })
+      }
+      if (bmi >= 18.5 && bmi < 24.9) {
+        this.setState({ dis: false })
+        this.setState({ emotionpic: love })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ textstatus: 'Normal weight' })
+      }
+      if (bmi >= 25 && bmi < 29.9) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: smilecry })
+        this.setState({ textstatus: 'Overweight' })
+      }
+      if (bmi >= 30) {
+        this.setState({ dis: false })
+        this.setState({ displaystatus: "flex" });
+        this.setState({ emotionpic: angry })
+        this.setState({ textstatus: 'Obesity' })
+      }
+    }
     this.setState({ BMIvalue: bmi })
   }
 
@@ -236,25 +241,22 @@ class App extends Component {
           </div>
           <div className="layout-Modol" id="overray" onClick={event => this.closedisplay(event)} style={{ display: this.state.displaystatus }}>
             <div className="Modal" id="modal" style={{ display: this.state.displaystatus }}>
-              <h1>{this.state.BMIvalue}</h1>
-              <h2>{this.state.textstatus}</h2>
-            </div>
-          </div>
-          {/* <div className="right-content">
-            <div className="bmi-value">
-              <h1 className="value-bmi">{this.state.BMIvalue}/40</h1>
-              <div>
-                <div class="progress-bar">
-                  <div class="value-progress-bar" style={{ width: (this.state.BMIvalue) * 2.5 >= 100 ? "100" + "%" : (this.state.BMIvalue) * 2.5 + "%" }}>
+              <div className="box-result">
+                <div className="box-result-img">
+                  <img class="cute-img" src={this.state.emotionpic} alt="emotion" />
+                </div>
+                <div className="box-result-rogressbar">
+                  <h1 className="bmi-value">{this.state.BMIvalue}</h1>
+                  <div class="progress-bar">
+                    <div class="value-progress-bar" style={{ width: (this.state.BMIvalue) * 2.5 >= 100 ? "100" + "%" : (this.state.BMIvalue) * 2.5 + "%" }} />
                   </div>
+                </div>
+                <div className="box-result-text">
+                  <h2 className="description">{this.state.textstatus}</h2>
                 </div>
               </div>
             </div>
-            <div className="description">
-              <img class="cute-img" src={this.state.emotionpic} alt="emotion" />
-              <p>{this.state.textstatus}</p>
-            </div>
-          </div> */}
+          </div>
         </div>
       </div>
     );

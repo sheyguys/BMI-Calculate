@@ -67,26 +67,32 @@
 }
 
 .Modal {
+  background-image: url("./assets/Modal.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 15px;
   -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
   background-color: #d5d6dc;
-  height: 768px;
-  width: 1024px;
+  height: 900px;
+  width: 1000px;
   top: 50%;
   left: 50%;
-  margin-top: -384px;
-  margin-left: -512px;
+  margin-top: -450px;
+  margin-left: -500px;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.right-content {
-  background-color: #D1EDE1;
-  height: 100%;
+.box-result {
   display: grid;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 200px 200px 200px;
+  width: 100vw;
 }
 
 .gender {
@@ -156,17 +162,9 @@
   height: 50px;
   font-size: 25px;
   width: 350px;
-  border-radius: 5px;
-}
-
-input.input {
   border: 0;
   opacity: 0.5;
   border-radius: 5px;
-}
-
-.texts {
-  font-size: 30px;
 }
 
 .buttonsubmit {
@@ -213,44 +211,52 @@ input.input {
   margin-right: 80px;
 }
 
-.description {
-  font-weight: bold;
-  font-family: 'Itim', cursive;
-  font-size: 25px;
-  margin-left: 12%;
-  margin-right: 12%;
-  text-align: center;
-}
-
-.bmi-value {
-  margin-left: 12%;
-  margin-right: 12%;
-  font-weight: bold;
-  font-family: 'Itim', cursive;
-  font-size: 55px;
-}
-
-.value-bmi {
+.box-result-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.box-result-progressbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bmi-value {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Itim', cursive;
+  font-size: 55px;
+}
+
+.description {
+  display: block;
+  font-weight: bold;
+  font-family: 'Itim', cursive;
+  font-size: 25px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
 .progress-bar {
-  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  width: 60%;
   background-color: #aeaeae;
   border-radius: 50px;
   height: 40px;
 }
 
 .value-progress-bar {
-  display: block;
   height: 40px;
-  background-image: linear-gradient(to left, green, yellow, orange, red);
+  background-image: linear-gradient(to right, yellow 10%, green 50%, orange 70%, red 100%, rgba(63, 63, 63, 0) 100%);
   border-radius: 30px;
 }
 
 .cute-img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
