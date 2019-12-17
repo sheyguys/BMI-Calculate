@@ -246,9 +246,9 @@ class App extends Component {
                   <img class="cute-img" src={this.state.emotionpic} alt="emotion" />
                 </div>
                 <div className="box-result-rogressbar">
-                  <h1 className="bmi-value">{this.state.BMIvalue}</h1>
-                  <div class="progress-bar">
-                    <div class="value-progress-bar" style={{ width: (this.state.BMIvalue) * 2.5 >= 100 ? "100" + "%" : (this.state.BMIvalue) * 2.5 + "%" }} />
+                  <h1 className="bmi-value">Your BMI : {this.state.BMIvalue}</h1>
+                  <div className="progress-bar">
+                    <div className="value-progress-bar" style={{ width: (this.state.BMIvalue) * 2.5 >= 100 ? "100" + "%" : (this.state.BMIvalue) * 2.5 + "%" }} />
                   </div>
                 </div>
                 <div className="box-result-text">

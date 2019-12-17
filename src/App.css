@@ -245,15 +245,25 @@
   margin: auto;
   margin-top: 30px;
   width: 60%;
-  background-color: #aeaeae;
+  background-color:#ECF0F1;
   border-radius: 50px;
   height: 40px;
 }
 
 .value-progress-bar {
+  animation: progress 2s;
   height: 40px;
-  background-image: linear-gradient(to right, yellow 10%, green 50%, orange 70%, red 100%, rgba(63, 63, 63, 0) 100%);
+  background-image: linear-gradient(45deg,#ABEBC6,#82E0AA,#58D68D,#2ECC71,#28B463,#239B56 );
   border-radius: 30px;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .cute-img {
