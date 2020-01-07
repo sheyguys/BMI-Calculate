@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/BMI-Calculate/static/css/main.a147023a.chunk.css",
+    "main.js": "/BMI-Calculate/static/js/main.8e682ec0.chunk.js",
+    "main.js.map": "/BMI-Calculate/static/js/main.8e682ec0.chunk.js.map",
+    "runtime-main.js": "/BMI-Calculate/static/js/runtime-main.a99c9944.js",
+    "runtime-main.js.map": "/BMI-Calculate/static/js/runtime-main.a99c9944.js.map",
+    "static/js/2.a2a4aa8f.chunk.js": "/BMI-Calculate/static/js/2.a2a4aa8f.chunk.js",
+    "static/js/2.a2a4aa8f.chunk.js.map": "/BMI-Calculate/static/js/2.a2a4aa8f.chunk.js.map",
+    "index.html": "/BMI-Calculate/index.html",
+    "precache-manifest.ae6d50bc9a14c435c1f197b5eb0de18f.js": "/BMI-Calculate/precache-manifest.ae6d50bc9a14c435c1f197b5eb0de18f.js",
+    "service-worker.js": "/BMI-Calculate/service-worker.js",
+    "static/css/main.a147023a.chunk.css.map": "/BMI-Calculate/static/css/main.a147023a.chunk.css.map",
+    "static/media/0.png": "/BMI-Calculate/static/media/0.4f31faea.png",
+    "static/media/1.png": "/BMI-Calculate/static/media/1.c94484b7.png",
+    "static/media/2.png": "/BMI-Calculate/static/media/2.924f264a.png",
+    "static/media/3.png": "/BMI-Calculate/static/media/3.eb0cd4a4.png",
+    "static/media/4.png": "/BMI-Calculate/static/media/4.774226c3.png",
+    "static/media/5.png": "/BMI-Calculate/static/media/5.2e9204b1.png",
+    "static/media/App.css": "/BMI-Calculate/static/media/bg.b866622e.jpg",
+    "static/media/asia-map.png": "/BMI-Calculate/static/media/asia-map.432754a0.png",
+    "static/media/europe-map.png": "/BMI-Calculate/static/media/europe-map.013331da.png",
+    "static/media/man.png": "/BMI-Calculate/static/media/man.e356c45a.png",
+    "static/media/women.png": "/BMI-Calculate/static/media/women.b702632c.png",
+    "static/media/zero.png": "/BMI-Calculate/static/media/zero.047e0775.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a99c9944.js",
+    "static/js/2.a2a4aa8f.chunk.js",
+    "static/css/main.a147023a.chunk.css",
+    "static/js/main.8e682ec0.chunk.js"
+  ]
+}
